@@ -36,4 +36,13 @@ class Bottles
     end
   end
 
+  def song
+    amount_1 = 99
+    amount_2 = 98
+    until amount_1 == 3
+      puts verses(amount_1, amount_2)
+      amount_1 = amount_1 - 1
+      amount_2 = amount_2 - 1
+    end
+  end
 end
