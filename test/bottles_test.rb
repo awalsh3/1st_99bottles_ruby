@@ -34,14 +34,12 @@ class BottlesTest < Minitest::Test
   end
 
   def test_a_couple_verses
-    skip
-    expected = <<-VERSES
-99 bottles of beer on the wall, 99 bottles of beer.
-Take one down and pass it around, 98 bottles of beer on the wall.
+    expected ='99 bottles of beer on the wall, 99 bottles of beer.
+    Take one down and pass it around, 98 bottles of beer on the wall.
 
-98 bottles of beer on the wall, 98 bottles of beer.
-Take one down and pass it around, 97 bottles of beer on the wall.
-VERSES
+    98 bottles of beer on the wall, 98 bottles of beer.
+    Take one down and pass it around, 97 bottles of beer on the wall.'
+
     assert_equal expected, ::Bottles.new.verses(99, 98)
   end
 

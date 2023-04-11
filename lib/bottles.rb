@@ -16,4 +16,13 @@ class Bottles
   end
 
   end
+
+  def verses(amount_1, amount_2)
+    "#{amount_1} bottles of beer on the wall, #{amount_1} bottles of beer.
+    Take one down and pass it around, #{amount_1 - 1} bottles of beer on the wall.
+
+    #{amount_2} bottles of beer on the wall, #{amount_2} bottles of beer.
+    Take one down and pass it around, #{amount_2 - 1} bottles of beer on the wall."
+  end
+
 end
